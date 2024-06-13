@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salas Kwitter</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <style>
+        .form{
+            margin-top: 100px;
+            border: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+        #sala{
+            border-radius: 30px;
+            border-width: 0.5px;
+            height: 25px;
+            width: 250px;
+            text-align: center;
+        }
+        button{
+            border-radius: 100px;
+            border-width: 0.5px;
+            height: 30px;
+            width: 60px;
+            background-color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1 id="welcome"></h1>
+        <input type="text" id="sala" placeholder="#NomeDaSala"/>
+        <button onclick="AdicionarSala()">Criar</button>
+    </div>
+    <div id="salasDiv"></div>
+    <script src="salas.js"></script>
+</body>
+</html>
