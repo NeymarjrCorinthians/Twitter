@@ -2,3 +2,6 @@ body
 {
     background-color: rgb(165, 165, 240);
 }
+    .user_tick {
+width: 20px;
+    }
